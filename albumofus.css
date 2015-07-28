@@ -1,0 +1,24 @@
+body{
+  text-align: center;
+  background-color: white;
+  font-family: impact;
+  min-height: 100%;
+}
+
+html{
+  min-height: 100%;
+}
+
+div.banner {
+    color: black;
+    background-color: lightgray;
+    background-image: url(usa.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20%;
+    text-align: left;
+    padding-left: 22%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    height: 7%;
+}
