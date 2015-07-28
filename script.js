@@ -1,7 +1,7 @@
 $(document).ready(function() {
-   $("div.centerphoto").mouseenter(function() {
+   $("img").mouseenter(function() {
        $("div.next").show();
-     $("div.centerphoto").mouseleave(function() {
+     $("img").mouseleave(function() {
            $("div.next").hide();
    });
 });

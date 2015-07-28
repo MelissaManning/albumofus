@@ -20,20 +20,20 @@ div.banner {
     padding-left: 12%;
     padding-bottom: 5%;
     padding-top: 5%;
-    height: 7%;
+    height: 5%;
 }
 
 div.centerphoto {
   background-color: white;
-  background-image: url(van.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 100%;
-  padding: 10% 3% 10% 3%;
-  min-height: 300px;
+  margin: 10px 3px 0% 3px;
+  min-height: 200px;
 
 }
 
+img{
+  width: 95%;
+}
 div.next {
     height: 50px;
     width: 50px;
@@ -47,5 +47,9 @@ div.next {
 
 div.bottombanner {
     background-color: gray;
-    padding-bottom: 10%;
+    position: fixed;
+    bottom: 0px;
+    height: 7%;
+    left: 0px;
+    right: 0px;
 }
