@@ -46,7 +46,7 @@ div.previous {
     text-shadow: 10px;
     font-family: sans-serif;
     z-index: 2;
-    top: 50%;
+    top: calc(50% - 29px);
     left: 5%;
     opacity: 0.6;
 }
@@ -60,7 +60,7 @@ div.next {
     text-shadow: 10px;
     font-family: sans-serif;
     z-index: 2;
-    top: 50%;
+    top: calc(50% - 29px);
     right: 5%;
     opacity: 0.6;
 }
@@ -89,12 +89,13 @@ div.bottombanner {
 div.moreinfo {
   background-color: darkgray;
   color: white;
-  font-size: 10px;
+  font-size: 15px;
+  text-align: center center;
   height: 2%;
   cursor: pointer;
   z-index: 3;
   position: fixed;
-  width: 5%;
+  width: 8%;
   right: 6%;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
