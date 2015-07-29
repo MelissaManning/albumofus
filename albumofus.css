@@ -20,7 +20,6 @@ div.banner {
     padding-left: 12%;
     padding-bottom: 3%;
     padding-top: 3%;
-    height: 5%;
 }
 
 div.centerphoto {
@@ -32,7 +31,7 @@ div.centerphoto {
 }
 
 img{
-  width: 95%;
+  width: 98%;
 }
 
 div.previous {
@@ -66,4 +65,27 @@ div.bottombanner {
     height: 7%;
     left: 0px;
     right: 0px;
+}
+
+div.moreinfo {
+  background-color: darkgray;
+  color: white;
+  font-size: 10px;
+  height: 2%;
+  cursor: pointer;
+  z-index: 3;
+  position: fixed;
+  width: 5%;
+  right: 6%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+}
+
+div.panel {
+	background: lightgray;
+  background-size:90% 90%;
+  height:40px;
+	display:none;
+  font-family:sans-serif;
 }

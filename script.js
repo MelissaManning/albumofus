@@ -13,3 +13,11 @@ $(document).ready(function() {
          $("div.previous").hide();
        });
  });
+
+ $(document).ready(function(){
+     $('div.moreinfo').click(function() {
+     $('div.panel').slideToggle('slow');
+
+     });
+
+ });
