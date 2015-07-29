@@ -26,12 +26,12 @@ div.centerphoto {
   background-color: white;
   background-size: 100%;
   margin: 10px 3px 0% 3px;
-  min-height: 200px;
   position: relative;
 }
 
-img{
+img.main{
   width: 98%;
+  min-width: 300px;
 }
 
 div.previous {
