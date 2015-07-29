@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("img").mouseenter(function() {
+    $("img, div.next, div.previous, div.daycount").mouseenter(function() {
         $("div.next, div.previous, div.daycount").show();
     });
      $("img").mouseleave(function() {
