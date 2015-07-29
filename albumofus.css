@@ -37,7 +37,7 @@ img.main{
   margin-left: auto;
 }
 
-div.previous {
+div.previous, div.next {
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
@@ -47,22 +47,15 @@ div.previous {
     font-family: sans-serif;
     z-index: 2;
     top: calc(50% - 29px);
-    left: 5%;
     opacity: 0.6;
 }
 
+div.previous {
+    left: 5%;
+}
+
 div.next {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
-    position: absolute;
-    color: lightgray;
-    text-shadow: 10px;
-    font-family: sans-serif;
-    z-index: 2;
-    top: calc(50% - 29px);
     right: 5%;
-    opacity: 0.6;
 }
 
 div.daycount {
