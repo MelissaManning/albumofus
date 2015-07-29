@@ -83,8 +83,9 @@ div.moreinfo {
   background-color: darkgray;
   color: white;
   font-size: 15px;
-  text-align: center center;
-  height: 2%;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
   cursor: pointer;
   z-index: 3;
   position: fixed;
