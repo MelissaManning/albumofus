@@ -3,10 +3,12 @@ body{
   background-color: white;
   font-family: sans-serif;
   min-height: 100%;
+  margin: 0px;
 }
 
 html{
   min-height: 100%;
+  margin: 0px;
 }
 
 div.banner {
@@ -32,6 +34,7 @@ div.centerphoto {
 img.main{
   width: 98%;
   min-width: 300px;
+  max-width: 1100px;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -60,14 +63,13 @@ div.next {
 
 div.daycount {
     text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
     position: absolute;
     width: 100%;
-    color: darkgray;
-    font-family: sans-serif;
+    color: white;
+    font-family: helvetica;
     z-index: 2;
-    bottom: 8%;
+    bottom: 4%;
     opacity: 0.7;
 }
 div.bottombanner {
@@ -98,7 +100,7 @@ div.moreinfo {
 
 div.panel {
 	background: lightgray;
-  height:20px;
+  height:28px;
 	display:none;
   font-family:sans-serif;
   font-size: 8px;
