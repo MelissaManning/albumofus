@@ -28,7 +28,7 @@ div.banner {
 }
 
 div.bannertext {
-  font-size: 10px;
+  font-size: 10.5px;
   float: right;
   margin-right: 18%;
   position: relative;
@@ -68,7 +68,8 @@ div.bottomrightphoto {
 
 div.bottomrightdescription {
   padding-top: 2%;
-  font-size: 14px;
+  padding-bottom: 1%;
+  font-size: 12px;
   position: absolute;
   width: 98%;
   height: 6%;
@@ -131,6 +132,7 @@ img.next {
 
 div.daycount, div.location {
     padding-top: 2%;
+    padding-bottom: 1%;
     font-size: 14px;
     position: absolute;
     width: 98%;
