@@ -30,12 +30,12 @@ div.banner {
 div.bannertext {
   font-size: 10px;
   float: right;
-  margin-right: 14%;
+  margin-right: 18%;
   position: relative;
 }
 
 div.photos {
-  margin: 1.5% 14% 0% 14%;
+  margin: 1.5% 18% 0% 18%;
 }
 
 div.bottomphotos{
@@ -123,7 +123,7 @@ div.daycount, div.location {
     font-family:sans-serif;
     z-index: 2;
     bottom: 0;
-    opacity: 0.5;
+    opacity: 0.3;
     background-color: white;
 }
 
