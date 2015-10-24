@@ -19,11 +19,11 @@ div.banner {
     background-image: url(albumofus-640.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 18%;
+    background-size: 15%;
     margin-top: 2%;
     text-align: right;
     padding-bottom: 3%;
-    padding-top: 12%;
+    padding-top: 10%;
     box-shadow: 1px 3px 10px #131212;
 }
 
@@ -77,9 +77,10 @@ img.main {
   margin-left: auto;
 }
 
-img.bottomleft{
+iframe.bottomleft{
   position: absolute;
   height: 100%;
+  width: 100%;
   display: block;
   top: 0;
   bottom: 0;
