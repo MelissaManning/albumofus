@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $("img, div.next, div.previous, div.daycount").mouseenter(function() {
-        $("div.next, div.previous, div.daycount").show();
+    $("img, img.next, img.previous, div.daycount, div.location").mouseenter(function() {
+        $("img.next, img.previous, div.daycount, div.location").show();
     });
      $("img").mouseleave(function() {
-         $("div.next, div.previous, div.daycount").hide();
+         $("img.next, img.previous, div.daycount, div.location").hide();
     });
      $("div.moreinfo").click(function() {
          $("div.panel").slideToggle('slow');

@@ -97,30 +97,23 @@ img.bottomright{
   left: 0;
 }
 
-div.previous, div.next {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
+img.previous, img.next {
     position: absolute;
-    color: lightgray;
-    text-shadow: 10px;
-    font-family: sans-serif;
+    height: 10%;
     z-index: 2;
-    top: calc(50% - 29px);
-    opacity: 0.8;
+    top: calc(50% - 20px);
+    opacity: 0.85;
 }
 
-div.previous {
+img.previous {
     left: 3%;
 }
 
-div.next {
+img.next {
     right: 3%;
 }
 
-div.daycount {
-    text-align: left;
-    padding-left: 2%;
+div.daycount, div.location {
     padding-top: 2%;
     font-size: 14px;
     position: absolute;
@@ -132,4 +125,15 @@ div.daycount {
     bottom: 0;
     opacity: 0.5;
     background-color: white;
+}
+
+div.daycount {
+  text-align: left;
+  padding-left: 2%;
+}
+
+div.location {
+    text-align: right;
+    padding-right: 2%;
+
 }
