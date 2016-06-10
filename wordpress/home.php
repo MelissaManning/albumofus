@@ -19,7 +19,9 @@
    				</iframe>
 			</div>
       			<div class="bottomrightphoto">
-          			<?php the_content(); ?>
+				<img class="bottomright" src="<?php echo get_post_meta( get_the_ID(), 'bottomright', true ); ?>">
+			<div class="bottomrightdescription"><?php echo get_post_meta( get_the_ID(), 'bottomrightdescription', true ); ?></div>
+			</div>
 			</div>
 		</div>
 	</div>  
