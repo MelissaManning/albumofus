@@ -20,20 +20,15 @@
 	<!--[if IE]><![endif]-->
 	<!--[if lte IE 8]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script><![endif]-->
 	<!--[if lte IE 7]><script src="//cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.js"></script><![endif]-->
-	<script src="<?php bloginfo('template_url'); ?>/toolbelt.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/scripts.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/script.js"></script>
 </head>
-<body<?php if (is_single() && !is_page()) { ?> class="article"<?php } ?>>
-<div class="container">
-	<?php if (is_page()) { ?>
-		<header>
-			<a href="/" title="Homepage">album of us</a>
-		</header>
-	<?php } else { ?>
-		<div class="nav-container">
-			<a class="header-logo" href="/" title="Homepage"><span>album of us</span></a>
-			<a class="nav-left" href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>"> &lt;&lt; </a>
-			<a class="nav-right"href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>"> &gt;&gt; </a>
-				</div>
-
-	<?php } ?>
+<body>
+	<div>
+		<div class="banner">
+			<div class="bannertext">
+				About
+				Contact
+				Links
+			</div>
+		</div>
+	</div>

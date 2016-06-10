@@ -1,250 +1,188 @@
 /*
-Theme Name: album of us
+Theme Name: album of us 2.0
 Theme URI: http://albumofus.com
 Author: Brian Manning
 Author URI: http://brimanning.com/
-Description: A theme for album of us, a travel blog following Brian Manning (http://brimanning.com) and Missy Manning (http://missymanning.com).
-Version: 1.0
+Description: A theme for album of us, a visual travel blog following Brian Manning (http://brimanning.com) and Missy Manning (http://missymanning.com).
+Version: 2.0
 Text Domain: albumofus
 */
 
-html {
-	margin:0;
-	padding:0;
-	border:0;
+body{
+  text-align: center;
+  background: url(img/topography.jpg);
+  font-family: sans-serif;
+  min-height: 100%;
+  margin: 0px;
+  position: relative;
 }
 
-body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, code,
-del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, dialog, figure, footer, header,
-hgroup, nav, section {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+
+html{
+  min-height: 100%;
+  margin: 0px;
 }
 
-article, aside, details, figcaption, figure, dialog,
-footer, header, hgroup, menu, nav, section {
-	display:block;
+div.banner {
+    color: black;
+    background-color: white;
+    background-image: url(img/albumofus-640.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 11%;
+    margin-top: 1%;
+    text-align: right;
+    padding-bottom: 3%;
+    padding-top: 6%;
+    box-shadow: 1px 3px 10px #131212;
 }
 
-body {
-	line-height:1.5;
-	background:transparent;
-	opacity: 0;
+div.bannertext {
+  font-size: 10.5px;
+  float: right;
+  margin-right: 18%;
+  position: relative;
 }
 
-table {
-	border-collapse:separate;
-	border-spacing:0;
-}
-caption, th, td {
-	text-align:left;
-	font-weight:normal;
-	float:none !important;
-}
-table, th, td {
-	vertical-align:middle;
+div.photos {
+  margin: 1.5% 18% 0% 18%;
 }
 
-blockquote:before, blockquote:after, q:before, q:after { content:''; }
-blockquote, q { quotes:"" ""; }
-
-a img { border:none; }
-
-:focus { outline:0; }
-html {
-	font: 100% 'Averia Libre', sans-serif;
-	text-rendering: optimizeLegibility;
-	font-weight: 400;
-	color: #111111;
-}
-strong,
-b {
-	font-weight: 700;
-}
-em {
-	font-style: italic;
-}
-.background-fix {
-	background: rgba(255, 255, 255, 0.5);
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-body {
-	text-align: center;
-}
-html, body {
-	height:100%;
-	width:100%;
-}
-.clearfixed {
-	width: 100%;
-	overflow: hidden;
+div.bottomphotos{
+  width: 100%;
+  margin-top: 2%;
 }
 
-.nav-container {
-	display: block;
-	position: absolute;
-	left: 7%;
-	top: 3%;
-	width: 192px;
-	height: 141.6px;
-	z-index: 1
-}
-.container {
-	position: relative;
-	z-index: 1;
-	width: 100%;
-	height:100%;
-	overflow: hidden;
-	margin: 0 auto;
-	text-align: left;
-}
-a {
-	text-decoration: none;
-	color: #336b45;
-}
-a:hover {
-	text-decoration: underline;
-}
-a:visited {
-	color: #aaaaaa;
-}
-a:active {
-	text-decoration: underline;
-	color: #777777;
-}
-::selection {
-	color: #f4f4f4;
-	background: #336b45;
-}
-::-moz-selection {
-	color: #f4f4f4;
-	background: #336b45;
+div.centerphoto {
+  position: relative;
+  box-shadow: 1px 3px 10px #131212;
 }
 
-.header-logo {
-	display: block;
-	background: transparent url(img/albumofus-640w.png) 50% 50% no-repeat;
-	background-size: 192px 141.6px;
-	width: 192px;
-	height: 141.6px;
-	z-index: 1
+div.bottomleftphoto {
+  position: relative;
+  padding-bottom: 45%;
+  width: 38%;
+  overflow: hidden;
+  box-shadow: 1px 3px 10px #131212;
+  float: left;
 }
 
-.header-logo span {
-	display: none
+div.bottomrightphoto {
+  position: relative;
+  padding-bottom: 45%;
+  width: 60%;
+  overflow: hidden;
+  box-shadow: 1px 3px 10px #131212;
+  float: right
 }
 
-a.nav-left {
-	position: absolute;
-	top:42%;
-	left:-19%;
-	color: #f4f4f4;
-	font-family: monospace;
-	font-size: 2em;
-	z-index: 1;
-	font-weight: 700;
-	text-decoration: none;
+div.bottomrightdescription {
+  padding-top: 2%;
+  padding-bottom: 0.5%;
+  font-size: 12px;
+  position: absolute;
+  width: 98%;
+  height: 6%;
+  color: #272626;
+  font-family:sans-serif;
+  z-index: 2;
+  bottom: 0;
+  opacity: 0;
+  background-color: white;
+  text-align: left;
+  padding-left: 2%;
+  transition: opacity .5s;
 }
 
-a.nav-right {
-	position: absolute;
-	top:42%;
-	right:-13%;
-	color: #f4f4f4;
-	font-family: monospace;
-	font-size: 2em;
-	z-index: 1;
-	font-weight: 700;
-	text-decoration: none;
+div.bottomrightdescription.active {
+  opacity: 0.4;
 }
 
-article {
-	height:100%;
-	width:100%;
-	position: relative;
-}
-article .title {
-	position: absolute;
-	bottom:10%;
-	left:5%;
-	right:25%;
-	color: #f4f4f4;
-	font-size: 1.5em;
-	z-index: 1;
+img.main {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  max-width: 1600px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-article .date {
-	position:absolute;
-	right:5%;
-	bottom:6%;
-	color: #f4f4f4;
-	font-size: 1.12em;
-	z-index: 1;
-}
-.banner-image {
-	
-}
-.banner-image img {
-	margin:0 auto;
-	display: block;
-	position: absolute;
-}
-article .location {
-	position: absolute;
-	bottom:6%;
-	left:5%;
-	right:35%;
-	color: #f4f4f4;
-	font-size: 1.12em;
-}
-article .location span {
-	
+iframe.bottomleft{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
-@media (max-width: 600px) {
-	.header-logo {
-		background: transparent url(img/albumofus-320w.png) 50% 50% no-repeat;
-		background-size: 120px 88.5px;
-		width: 120px;
-		height: 88.5px;
-	}
-	a.nav-right {
-		right: 29%;
-		top: 28%;
-		font-size: 1.4em;
-	}
-	a.nav-left {
-		left: -13%;
-		top: 28%;
-		font-size: 1.4em;
-	}
+img.bottomright{
+  position: absolute;
+  height: 100%;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
-@media (max-width: 500px) {
-	article .title {
-		bottom:20%;
-	}
-	article .date {
-		left:5%;
-		bottom:12%;
-	}
-	article .location {
-		bottom:5%;
-		right:5%;
-	}
+a.previous, a.next {
+    position: absolute;
+    height: 10%;
+    width: 4%;
+    z-index: 2;
+    top: calc(50% - 20px);
+    opacity: 0;
+    transition: opacity .5s;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
-#wpstats { opacity: 0; height: 0; display: none; }
+a.previous.active, a.next.active {
+    opacity: 0.85;
+}
+
+a.previous {
+    left: 3%;
+    background-image: url(img/leftarrow.png);
+}
+
+a.next {
+    right: 3%;
+    background-image: url(img/rightarrow.png);
+}
+
+div.daycount, div.location {
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    font-size: 14px;
+    position: absolute;
+    width: 98%;
+    height: 6%;
+    color: #272626;
+    font-family:sans-serif;
+    z-index: 2;
+    bottom: 0;
+    opacity: 0;
+    background-color: white;
+    transition: opacity .5s;
+}
+
+div.daycount.active, div.location.active{
+  opacity: 0.4;
+}
+
+div.daycount {
+  text-align: left;
+  padding-left: 2%;
+}
+
+div.location {
+    text-align: right;
+    padding-right: 2%;
+
+}
