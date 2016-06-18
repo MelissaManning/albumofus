@@ -1,0 +1,186 @@
+/*
+Theme Name: album of us 2.0
+Theme URI: http://albumofus.com
+Author: Brian Manning
+Author URI: http://brimanning.com/
+Description: A theme for album of us, a visual travel blog following Brian Manning (http://brimanning.com) and Missy Manning (http://missymanning.com).
+Version: 2.0
+Text Domain: albumofus
+*/
+
+body{
+  text-align: center;
+  background: url(img/topography.jpg);
+  font-family: sans-serif;
+  min-height: 100%;
+  margin: 0px;
+  position: relative;
+}
+
+
+html{
+  min-height: 100%;
+  margin: 0px;
+}
+
+div.banner {
+    color: black;
+    background-color: white;
+    background-image: url(img/albumofus-640.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 11%;
+    margin-top: 1%;
+    text-align: right;
+    padding-bottom: 3%;
+    padding-top: 6%;
+    box-shadow: 1px 3px 10px #131212;
+}
+
+div.bannertext {
+  font-size: 10.5px;
+  float: right;
+  margin-right: 18%;
+  position: relative;
+}
+
+div.photos {
+    min-width: 320px;
+    max-width: 600px;
+    margin: 15px auto 0;
+    width: 80%;
+}
+
+div.bottomphotos{
+  width: 100%;
+  margin-top: 2%;
+}
+
+div.centerphoto {
+  position: relative;
+  box-shadow: 1px 3px 10px #131212;
+}
+
+div.bottomleftphoto {
+  position: relative;
+  padding-bottom: 45%;
+  width: 38%;
+  overflow: hidden;
+  box-shadow: 1px 3px 10px #131212;
+  float: left;
+}
+
+div.bottomrightphoto {
+  position: relative;
+  padding-bottom: 45%;
+  width: 60%;
+  overflow: hidden;
+  box-shadow: 1px 3px 10px #131212;
+  float: right
+}
+
+div.bottomrightdescription {
+  padding-top: 2%;
+  padding-bottom: 0.5%;
+  font-size: 12px;
+  position: absolute;
+  width: 98%;
+  height: 6%;
+  color: #272626;
+  font-family:sans-serif;
+  z-index: 2;
+  bottom: 0;
+  opacity: 0;
+  background-color: white;
+  text-align: left;
+  padding-left: 2%;
+  transition: opacity .5s;
+}
+
+div.bottomrightdescription.active {
+  opacity: 0.5;
+}
+
+img.main {
+  width: 100%;
+  display: block;
+}
+
+iframe.bottomleft{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+img.bottomright{
+  position: absolute;
+  height: 100%;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+a.previous, a.next {
+    position: absolute;
+    height: 10%;
+    width: 4%;
+    z-index: 2;
+    top: calc(50% - 20px);
+    opacity: 0;
+    transition: opacity .5s;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+a.previous.active, a.next.active {
+    opacity: 0.85;
+}
+
+a.previous {
+    left: 3%;
+    background-image: url(img/leftarrow.png);
+}
+
+a.next {
+    right: 3%;
+    background-image: url(img/rightarrow.png);
+}
+
+div.daycount, div.location {
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    font-size: 14px;
+    position: absolute;
+    width: 98%;
+    height: 5%;
+    color: #000000;
+    font-family:sans-serif;
+    z-index: 2;
+    bottom: 0;
+    opacity: 0;
+    background-color: white;
+    transition: opacity .5s;
+}
+
+div.daycount.active, div.location.active{
+  opacity: 0.5;
+}
+
+div.daycount {
+  text-align: left;
+  padding-left: 2%;
+}
+
+div.location {
+    text-align: right;
+    padding-right: 2%;
+
+}
