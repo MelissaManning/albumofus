@@ -25,10 +25,10 @@
 <body>
 	<div>
 		<div class="banner">
-			<div class="bannertext">
+			<!--<div class="bannertext">
 				About
 				Contact
 				Links
-			</div>
+			</div>-->
 		</div>
 	</div>
