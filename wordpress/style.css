@@ -23,18 +23,25 @@ html{
   margin: 0px;
 }
 
-div.banner {
+.banner {
     color: black;
     background-color: white;
+    margin-top: .8%;
+    text-align: center;
+    height: 45px;
+    box-shadow: 1px 3px 10px #131212;
+}
+
+.logohome {
     background-image: url(img/albumofus-640.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 11%;
-    margin-top: 1%;
-    text-align: right;
-    padding-bottom: 3%;
-    padding-top: 6%;
-    box-shadow: 1px 3px 10px #131212;
+    background-size: contain;
+    height: 100%;
+    width: 50px;
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
 }
 
 div.bannertext {
@@ -46,9 +53,9 @@ div.bannertext {
 
 div.photos {
     min-width: 320px;
-    max-width: 600px;
-    margin: 15px auto 0;
-    width: 80%;
+    max-width: 800px;
+    margin: 15px auto;
+    width: 85%;
 }
 
 div.bottomphotos{
@@ -59,6 +66,15 @@ div.bottomphotos{
 div.centerphoto {
   position: relative;
   box-shadow: 1px 3px 10px #131212;
+}
+
+.centerphoto:hover .metadata {
+  opacity: 0.8;
+}
+
+.centerphoto:hover .previous,  
+.centerphoto:hover .next {
+  opacity: 0.92;
 }
 
 div.bottomleftphoto {
@@ -79,13 +95,12 @@ div.bottomrightphoto {
   float: right
 }
 
-div.bottomrightdescription {
+.bottomrightdescription {
   padding-top: 2%;
-  padding-bottom: 0.5%;
-  font-size: 12px;
+  padding-bottom: 2%;
+  font-size: 9px;
   position: absolute;
   width: 98%;
-  height: 6%;
   color: #272626;
   font-family:sans-serif;
   z-index: 2;
@@ -97,8 +112,8 @@ div.bottomrightdescription {
   transition: opacity .5s;
 }
 
-div.bottomrightdescription.active {
-  opacity: 0.5;
+.bottomrightphoto:hover .bottomrightdescription {
+  opacity: 0.8;
 }
 
 img.main {
@@ -127,7 +142,7 @@ img.bottomright{
   left: 0;
 }
 
-a.previous, a.next {
+.previous, .next {
     position: absolute;
     height: 10%;
     width: 4%;
@@ -140,27 +155,22 @@ a.previous, a.next {
     background-repeat: no-repeat;
 }
 
-a.previous.active, a.next.active {
-    opacity: 0.85;
-}
-
-a.previous {
+.previous {
     left: 3%;
     background-image: url(img/leftarrow.png);
 }
 
-a.next {
+.next {
     right: 3%;
     background-image: url(img/rightarrow.png);
 }
 
-div.daycount, div.location {
+.metadata {
     padding-top: 2%;
-    padding-bottom: 0.5%;
-    font-size: 14px;
+    padding-bottom: 2%;
+    font-size: 11px;
     position: absolute;
-    width: 98%;
-    height: 5%;
+    width: 100%;
     color: #000000;
     font-family:sans-serif;
     z-index: 2;
@@ -168,19 +178,46 @@ div.daycount, div.location {
     opacity: 0;
     background-color: white;
     transition: opacity .5s;
+    text-align: left; 
 }
 
-div.daycount.active, div.location.active{
-  opacity: 0.5;
+.mileage {    
+    padding-left: 2%;
 }
 
-div.daycount {
-  text-align: left;
-  padding-left: 2%;
-}
-
-div.location {
-    text-align: right;
+.location {
     padding-right: 2%;
+    float: right;
+}
 
+#wpstats {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (min-width: 400px) {
+    .banner {
+	height: 75px;
+     }
+    .logohome {
+	width: 85px;
+     }
+}
+
+@media only screen and (min-width: 768px) {
+    .banner {
+	height: 140px;
+     }
+    .logohome {
+	width: 160px;
+     }
+    .metadata {
+	font-size: 14px;
+     }
+    .bottomrightdescription {
+	font-size: 12px;
+     }
 }

@@ -25,6 +25,7 @@
 <body>
 	<div>
 		<div class="banner">
+			<a class="logohome" href="http://albumofus.com"></a>
 			<!--<div class="bannertext">
 				About
 				Contact

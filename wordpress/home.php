@@ -7,8 +7,10 @@
 	<div class="photos">
 		<div class="centerphoto">
           		<img class="main" src="<?php echo esc_url(get_post_meta( get_the_ID(), 'mainimage', true) ); ?>">
-          		<div class="daycount"><?php echo get_post_meta( get_the_ID(), 'mileage', true ); ?></div>
-          		<div class="location"><?php echo get_post_meta( get_the_ID(), 'citystate', true ); ?></div>
+          		<div class="metadata">
+				<span class="mileage"><?php echo get_post_meta( get_the_ID(), 'mileage', true ); ?></span>
+          			<span class="location"><?php echo get_post_meta( get_the_ID(), 'citystate', true ); ?></span>
+			</div>
           		<a class="previous" href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>"></a>
           		<a class="next" href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>"></a>
       		</div>
@@ -22,8 +24,8 @@
 				<img class="bottomright" src="<?php echo get_post_meta( get_the_ID(), 'bottomright', true ); ?>">
 			<div class="bottomrightdescription"><?php echo get_post_meta( get_the_ID(), 'bottomrightdescription', true ); ?></div>
 			</div>
-			</div>
 		</div>
+		<div class="clear"></div>
 	</div>  
 
 		</article>
