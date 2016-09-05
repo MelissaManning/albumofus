@@ -99,6 +99,10 @@ div.bottomrightphoto {
   float: right;
 }
 
+div.bottomrightphoto.enlarged {
+    width: 300%;
+  }
+
 .bottomrightdescription {
   padding-top: 2%;
   padding-bottom: 2%;
@@ -151,7 +155,7 @@ img.bottomright{
     height: 10%;
     width: 4%;
     z-index: 2;
-    top: calc(50% - 20px);
+    top: calc(50% - 55px);
     opacity: 0;
     transition: opacity .5s;
     background-size: contain;
